@@ -1,0 +1,126 @@
+/* Reiniciar márgenes y rellenos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 100vh; /* 100% del alto de la pantalla */
+    background: url('../imagenes/header_background.jpeg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+}
+
+/* Opcional: Efecto de superposición para mejorar legibilidad */
+header::before {
+    content: "../imagenes/header_background.jpeg";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #000;
+    line-height: 1.6;
+
+}
+    .container {
+        max-width: 690px;
+        margin: 20px auto;
+        padding: 20px;
+
+      }
+
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+
+}
+
+.highlight {
+    color: red;
+    font-weight: bold;
+}
+
+.video-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.video-container iframe {
+    width: 100%;
+    max-width: 660px;
+    height: 315px;
+}
+
+.description {
+    color: #666;
+    font-size: 1.1em;
+}
+body {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.spoilers {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px; /* Espaciado entre párrafos */
+
+}
+
+.image-container {
+    text-align: center;
+}
+
+.image-container img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+}
+
+.contenedor {
+    text-align: left;
+    margin-bottom: 20px; /* Espaciado entre párrafos */
+}
+
+.reparto {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.reparto th, .reparto td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.reparto th {
+    background-color: #222;
+    color: #fff;
+}
+
+.reparto img {
+    width: 80px;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+}
